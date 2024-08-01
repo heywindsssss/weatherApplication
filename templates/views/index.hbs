@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="/img/weather.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Weather</title>
+</head>
+<body>
+    <div class="main-content">
+        {{>header }}
+        <p>Use this site to get your weather</p>
+        <form>
+            <input placeholder="Enter a location">
+            <button class="cta">
+                <span>search</span>
+                    <svg width="7px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+            </button>
+        </form>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+
+    </div>
+   
+
+    
+    {{>footer}}
+   <script src="./js/app.js"></script>
+</body>
+
+
+</html>

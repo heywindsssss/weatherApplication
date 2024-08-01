@@ -1,0 +1,205 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+  }
+
+  .main-content {
+    width: 80%; /* Use a percentage for responsive width */
+    max-width: 600px; /* Set a max-width for larger screens */
+    padding: 20px;
+    text-align: center; /* Center text within the div */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    background-color: #f9f9f9; /* Optional: Background color for contrast */
+    margin-left:2.5em;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .main-content {
+      width: 90%; /* Increase width to accommodate smaller screens */
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  /* Media query for very small screens */
+  @media (max-width: 480px) {
+    .main-content {
+      width: 95%; /* Further increase width for very small screens */
+      padding: 10px; /* Further adjust padding */
+      font-size: 0.9rem; /* Reduce font size slightly for readability */
+    }
+  }
+
+/* CSS for the footer section */
+.footer {
+  width: 100%; 
+  background-color: #f0f4f8; 
+  padding: 20px 0;
+  border-top: 1px solid #eaeaea;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fix the footer at the bottom */
+  bottom: 0; /* Align the footer to the bottom */
+  left: 0; /* Align the footer to the left */
+}
+
+.footer-content {
+  max-width: 1200px; /* Maximum width for content */
+  margin: 0 auto; /* Center the content */
+  padding: 0 20px; /* Add padding for content */
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons .icon {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+
+header {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+header a {
+        color: #3498db;
+        margin-right: 15px;
+        text-decoration: none;
+}
+
+/* .crazy {
+    width:225px;
+    border-radius:25px;
+    border:none;
+    height:300px;
+
+}
+
+.crazy:hover{
+  transform:scale(1.05);
+  transition:all ease-in-out 0.5s
+} */
+
+button {
+  cursor:pointer;
+  border:1px solid #888888;
+  bacground:#888888;
+  color:black;
+  padding:8px;
+}
+
+input {
+  border: 1px solid #cccccc;
+  padding:8px;
+}
+
+.about {
+  
+  gap:20px;
+}
+
+.about-me-text {
+  text-align:left;
+  
+}
+.about-project {
+  text-align:left;
+}
+.about-project h3{
+  text-align:center;
+}
+
+.about-me {
+  display:flex
+  gap:20px;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+} 
+
+
